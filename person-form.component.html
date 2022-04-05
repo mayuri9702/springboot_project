@@ -1,0 +1,31 @@
+<div>
+    <h1>Person Registration Form</h1>
+    <br>
+    <form (ngSubmit)="submitPerson()">
+        <table>
+        <tr>
+            <td>PersonID</td>
+            <td><input type="text" name="personID" [(ngModel)]="person.personID"/></td>
+        </tr>
+        <tr>
+            <td>Person FirstName</td>
+            <td><input type="text" name="firstName" [(ngModel)]="person.firstName"/></td>
+        </tr>
+        <tr>
+            <td>Person LastName</td>
+            <td><input type="text" name="lastName" [(ngModel)]="person.lastName"/></td>
+        </tr>
+        <tr>
+            <td>Pan Card Number</td>
+            <td><input type="text" name="panCard" [(ngModel)]="person.panCard"/></td>
+        </tr>
+        <tr>
+            <td>Aadhar Card Number</td>
+            <td><input type="text" name="aadharCard" [(ngModel)]="person.aadharCard"/></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="submit"></td>
+        </tr>
+    </table>
+</form>
+</div>
